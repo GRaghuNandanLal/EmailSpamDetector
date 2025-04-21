@@ -1,0 +1,98 @@
+.card {
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.progress {
+    height: 25px;
+}
+
+.progress-bar {
+    transition: width 0.6s ease;
+}
+
+#result {
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.navbar {
+    margin-bottom: 2rem;
+}
+
+.form-control:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+.table-responsive {
+    margin-top: 20px;
+}
+
+.badge {
+    padding: 8px 12px;
+    font-size: 0.9em;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.text-truncate {
+    max-width: 300px;
+}
+
+.spam-words-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.spam-word-item {
+    background-color: #f8f9fa;
+    border-radius: 20px;
+    padding: 8px 15px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.spam-word-item .word {
+    font-weight: bold;
+    color: #dc3545;
+}
+
+.spam-word-item .count {
+    color: #6c757d;
+    font-size: 0.9em;
+}
+
+.card {
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card-header h3 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+#trendChart {
+    min-height: 300px;
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.card-header h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    color: #333;
+} 

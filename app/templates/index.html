@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 offset-md-2">
+        <div class="card">
+            <div class="card-header">
+                <h2>Email Spam Detection</h2>
+            </div>
+            <div class="card-body">
+                <form id="spam-detection-form" method="POST">
+                    <div class="mb-3">
+                        <label for="email-content" class="form-label">Email Content</label>
+                        <textarea class="form-control" id="email-content" name="content" rows="6" required></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Or upload email file:</label>
+                        <input type="file" class="form-control" id="email-file" accept=".txt,.eml">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Analyze</button>
+                </form>
+
+                <div id="result" class="mt-4" style="display: none;">
+                    <h4>Analysis Result:</h4>
+                    <div class="alert" role="alert">
+                        <span id="prediction-text"></span>
+                        <div class="progress mt-2">
+                            <div id="confidence-bar" class="progress-bar" role="progressbar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 
